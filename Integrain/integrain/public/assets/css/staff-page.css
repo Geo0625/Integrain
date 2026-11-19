@@ -1,0 +1,198 @@
+/* Staff portal content (tables, status pills, salary layout) */
+/* Staff page content */
+body.portal-view #staff-page [data-staff-view][hidden] {
+    display: none !important;
+}
+
+body.portal-view #staff-page .staff-view {
+    animation: staff-view-enter .2s ease-out;
+}
+
+@keyframes staff-view-enter {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body.portal-view #staff-page .staff-page-panel {
+    padding: 22px;
+}
+
+body.portal-view #staff-page .staff-data-table {
+    min-width: 670px;
+    font-size: 12px;
+}
+
+body.portal-view #staff-page .staff-data-table td,
+body.portal-view #staff-page .staff-data-table th {
+    padding: 14px 12px;
+}
+
+body.portal-view #staff-page .amount-positive {
+    color: #167247;
+    font-weight: 800;
+}
+
+body.portal-view #staff-page .amount-negative {
+    color: #b84e41;
+    font-weight: 700;
+}
+
+body.portal-view #staff-page .status-pill {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+body.portal-view #staff-page .status-paid,
+body.portal-view #staff-page .status-complete {
+    color: #176b42;
+    background: #e3f3e6;
+}
+
+body.portal-view #staff-page .status-pending,
+body.portal-view #staff-page .status-late {
+    color: #96620c;
+    background: #fff1cf;
+}
+
+body.portal-view #staff-page .status-absent {
+    color: #a1443e;
+    background: #fbe8e5;
+}
+
+body.portal-view #staff-page .data-note {
+    margin: 16px 0 0;
+    color: #758278;
+    font-size: 11px;
+}
+
+body.portal-view #staff-page .staff-attendance-panel {
+    max-width: 650px;
+    margin-bottom: 16px;
+}
+
+body.portal-view #staff-page .staff-attendance-panel .calendar {
+    gap: 8px;
+    padding: 8px 0;
+}
+
+body.portal-view #staff-page .staff-attendance-panel .calendar span:not(.weekday) {
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    font-size: 12px;
+}
+
+body.portal-view #staff-page .attendance-log {
+    margin-top: 16px;
+}
+
+body.portal-view #staff-page .staff-salary-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+    gap: 16px;
+}
+
+body.portal-view #staff-page .salary-breakdown {
+    border-top: 1px solid #e8eee5;
+}
+
+body.portal-view #staff-page .salary-breakdown p {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0;
+    padding: 13px 5px;
+    border-bottom: 1px solid #edf1e9;
+    color: #627267;
+    font-size: 12px;
+}
+
+body.portal-view #staff-page .salary-breakdown b {
+    color: #244436;
+}
+
+body.portal-view #staff-page .salary-breakdown .salary-total {
+    margin-top: 5px;
+    padding: 16px 12px;
+    border: 0;
+    border-radius: 9px;
+    background: #eaf4e6;
+    color: #164b35;
+    font-weight: 800;
+}
+
+body.portal-view #staff-page .salary-breakdown .salary-total b {
+    color: #126340;
+    font-size: 16px;
+}
+
+body.portal-view #staff-page .request-label {
+    display: block;
+    margin: 14px 0 6px;
+    color: #365448;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+body.portal-view #staff-page .currency-input {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 11px;
+    border: 1px solid #dce6da;
+    border-radius: 8px;
+    background: #fff;
+    color: #54735d;
+}
+
+body.portal-view #staff-page .currency-input input,
+body.portal-view #staff-page .request-panel textarea {
+    width: 100%;
+    border: 1px solid #dce6da;
+    border-radius: 8px;
+    background: #fff;
+    color: #244436;
+    outline: 0;
+}
+
+body.portal-view #staff-page .currency-input input {
+    min-width: 0;
+    padding: 11px 0;
+    border: 0;
+}
+
+body.portal-view #staff-page .request-panel textarea {
+    resize: vertical;
+    padding: 11px;
+}
+
+body.portal-view #staff-page .currency-input:focus-within,
+body.portal-view #staff-page .request-panel textarea:focus {
+    border-color: #79a881;
+    box-shadow: 0 0 0 3px #13845514;
+}
+
+body.portal-view #staff-page .request-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 16px;
+    padding: 12px;
+    border: 1px solid #eee5c8;
+    border-radius: 9px;
+    background: #fffaf0;
+    color: #74633b;
+    font-size: 10px;
+}
+
+@media (max-width: 850px) {
+    body.portal-view #staff-page .staff-salary-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+

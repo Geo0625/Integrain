@@ -1,0 +1,407 @@
+/* Responsive overrides for the pages above */
+@media(max-width:1100px) {
+    .tagline {
+        display: none
+    }
+
+    .staff-columns {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .request-panel {
+        grid-column: span 2
+    }
+
+    .admin-columns {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .transactions-panel {
+        grid-column: span 2
+    }
+
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .portal-content {
+        padding: 24px
+    }
+
+    .brand-name {
+        font-size: 21px
+    }
+
+    .product-name {
+        font-size: 20px
+    }
+
+    .product-name small {
+        max-width: 300px;
+        white-space: normal
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(max-width:720px) {
+    .site-header {
+        min-height: 75px;
+        padding: 11px 18px
+    }
+
+    .brand {
+        gap: 8px
+    }
+
+    .brand-mark {
+        width: 41px;
+        height: 41px;
+        font-size: 22px
+    }
+
+    .brand-name {
+        font-size: 18px
+    }
+
+    .brand-name small {
+        font-size: 8px;
+        letter-spacing: 1px
+    }
+
+    .brand-divider {
+        height: 38px;
+        margin: 0 1px
+    }
+
+    .product-name {
+        font-size: 17px
+    }
+
+    .product-name small {
+        font-size: 8px;
+        max-width: 170px
+    }
+
+    .menu-toggle {
+        display: block
+    }
+
+    .top-nav {
+        position: sticky;
+        z-index: 15;
+        top: 0;
+        height: auto;
+        min-height: 70px;
+        padding: 8px 12px;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 10px 20px #1d3c2512
+    }
+
+    .nav-left {
+        gap: 8px
+    }
+
+    .nav-links {
+        display: none
+    }
+
+    .top-nav.open {
+        flex-wrap: wrap
+    }
+
+    .top-nav.open .nav-left {
+        flex-basis: 100%;
+        flex-wrap: wrap
+    }
+
+    .top-nav.open .nav-links {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 5px 0 8px
+    }
+
+    .nav-branding {
+        gap: 0;
+        min-width: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end
+    }
+
+    .brand {
+        gap: 6px
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+        font-size: 18px
+    }
+
+    .brand-name {
+        font-size: 14px
+    }
+
+    .brand-name small {
+        font-size: 7px;
+        letter-spacing: 1px
+    }
+
+    .brand-divider {
+        height: 30px;
+        margin: 0
+    }
+
+    .product-name {
+        font-size: 14px
+    }
+
+    .product-name small {
+        display: none
+    }
+
+    .tagline {
+        display: block;
+        width: 100%;
+        text-align: right;
+        font-size: 10px;
+        line-height: 1.2
+    }
+
+    .tagline span {
+        font-size: 13px;
+        margin-left: 2px
+    }
+
+    .nav-link {
+        height: 40px;
+        display: flex
+    }
+
+    .nav-link.active:after {
+        width: 3px;
+        top: 5px;
+        bottom: 5px;
+        left: -9px;
+        right: auto;
+        height: auto
+    }
+
+    .page {
+        padding: 20px 15px
+    }
+
+    .hero {
+        height: 370px;
+        border-radius: 12px;
+        background-position: center 25%
+    }
+
+    .hero-copy {
+        padding: 30px
+    }
+
+    .hero-stamp {
+        width: 74px;
+        height: 74px;
+        right: 15px;
+        font-size: 9px
+    }
+
+    .hero-stamp b {
+        font-size: 11px
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        margin: 13px 0 40px
+    }
+
+    .benefit {
+        padding: 13px 15px
+    }
+
+    .benefit-icon {
+        width: 41px;
+        height: 41px
+    }
+
+    .section-head h2,
+    .join-banner h2 {
+        font-size: 25px
+    }
+
+    .product-grid {
+        gap: 10px
+    }
+
+    .product-photo {
+        height: 125px
+    }
+
+    .product-info {
+        padding: 10px
+    }
+
+    .product-info h3 {
+        font-size: 12px
+    }
+
+    .product-meta strong {
+        font-size: 13px
+    }
+
+    .join-banner {
+        margin-top: 38px;
+        padding: 22px;
+        display: block
+    }
+
+    .join-banner .button {
+        margin-top: 17px
+    }
+
+    .portal-shell {
+        display: block;
+        overflow: visible;
+        border: 0;
+        background: transparent;
+        box-shadow: none
+    }
+
+    .sidebar {
+        padding: 11px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+        border-radius: 10px;
+        margin-bottom: 15px
+    }
+
+    .side-brand,
+    .side-label,
+    .side-bottom {
+        display: none
+    }
+
+    .side-link {
+        justify-content: center;
+        padding: 10px 5px;
+        margin: 0;
+        font-size: 11px
+    }
+
+    .side-link span {
+        display: none
+    }
+
+    .side-link.selected {
+        box-shadow: inset 0 -3px #c6e67a
+    }
+
+    .side-link .badge {
+        display: none
+    }
+
+    .portal-content {
+        padding: 19px 12px;
+        border: 1px solid var(--line);
+        border-radius: 11px
+    }
+
+    .portal-heading h1 {
+        font-size: 23px
+    }
+
+    .stats-grid,
+    .admin-stats {
+        grid-template-columns: 1fr
+    }
+
+    .stat-card {
+        padding: 12px
+    }
+
+    .staff-columns,
+    .admin-columns {
+        grid-template-columns: 1fr
+    }
+
+    .request-panel,
+    .transactions-panel {
+        grid-column: auto
+    }
+
+    .chart-panel {
+        min-height: 235px
+    }
+
+    .bar-chart {
+        height: 155px
+    }
+
+    .application-wrap {
+        display: block
+    }
+
+    .application-photo {
+        min-height: 210px;
+        padding: 25px
+    }
+
+    .application-photo h2 {
+        font-size: 32px
+    }
+
+    .application-form {
+        padding: 27px 22px
+    }
+
+    .inner-page>h1 {
+        font-size: 31px
+    }
+
+    footer {
+        margin-top: 5px;
+        padding: 18px;
+        flex-wrap: wrap;
+        gap: 9px;
+        font-size: 10px
+    }
+
+    footer small {
+        width: 100%;
+        margin: 0
+    }
+
+    .chat-box {
+        right: 10px;
+        bottom: 84px;
+        width: min(340px, calc(100vw - 20px));
+        height: min(440px, calc(100vh - 20px))
+    }
+
+    .chat-launcher {
+        right: 14px;
+        bottom: 14px;
+        gap: 9px
+    }
+
+    .chat-launcher-label {
+        padding: 10px 12px;
+        font-size: 12px
+    }
+
+    .chat-launcher-button {
+        width: 54px;
+        height: 54px
+    }
+}
+

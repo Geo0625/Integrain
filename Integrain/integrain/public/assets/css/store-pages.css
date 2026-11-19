@@ -1,0 +1,170 @@
+/* Products page, filters and application form */
+.inner-page {
+    max-width: 1120px;
+    margin: 24px auto
+}
+
+.inner-page>h1 {
+    font: 700 40px 'Playfair Display', serif;
+    color: var(--green);
+    margin: 7px 0
+}
+
+.inner-page>p {
+    color: var(--muted);
+    margin: 0
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin: 25px 0 18px
+}
+
+.filter {
+    padding: 8px 15px;
+    border: 1px solid #d8e5db;
+    background: white;
+    border-radius: 20px;
+    color: #60756a;
+    font-size: 11px
+}
+
+.filter.active,
+.filter:hover {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green)
+}
+
+.application-wrap {
+    max-width: 910px;
+    min-height: 590px;
+    margin: 16px auto;
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line)
+}
+
+.application-photo {
+    padding: 50px 32px;
+    color: #fff;
+    background: linear-gradient(180deg, #033f2ad9, #07583b72), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end
+}
+
+.application-photo .eyebrow {
+    color: #e3eebd
+}
+
+.application-photo h2 {
+    font: 700 38px 'Playfair Display', serif;
+    margin: 10px 0
+}
+
+.application-photo p {
+    font-size: 13px;
+    color: #e8efe4
+}
+
+.application-form {
+    padding: 38px 40px
+}
+
+.application-form h1 {
+    font: 700 30px 'Playfair Display', serif;
+    color: var(--green);
+    margin: 7px 0
+}
+
+.application-form>p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0 0 20px
+}
+
+.application-form label {
+    display: block;
+    margin-top: 12px;
+    color: #43564c;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.application-form label span {
+    color: #ce5749
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    border: 1px solid #dbe5dd;
+    border-radius: 6px;
+    padding: 11px 12px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 11px;
+    outline: none
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus,
+#chat-input:focus {
+    border-color: #59a17b;
+    box-shadow: 0 0 0 3px #13845512
+}
+
+.application-form textarea {
+    resize: vertical
+}
+
+.form-note {
+    min-height: 15px;
+    margin-top: 8px !important;
+    color: var(--green) !important;
+    font-weight: 700
+}
+
+footer {
+    max-width: 1370px;
+    margin: 20px auto 0;
+    padding: 22px 34px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #718078;
+    font-size: 11px
+}
+
+footer .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 14px
+}
+
+footer small {
+    margin-left: auto
+}
+
+.chat-launcher {
+    position: fixed;
+    z-index: 19;
+    right: 30px;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
